@@ -37,13 +37,11 @@
 
 .f_middle {
     padding: 2.5rem 0;
-    display: flex;
 }
 
 .f_middle .footer-links {
-    display: flex;
+    /* display: flex; */
     font-size: .75rem;
-    /* widows: 30rem; */
 }
 
 .f_middle .footer-links dt {
@@ -65,7 +63,6 @@
 }
 
 .f_middle .footer-contact {
-    display: flex;
     flex-direction: column;
     width: 15.8rem;
     height: 7rem;
@@ -109,7 +106,47 @@
 }
 
 .f_bottom {
+    margin: 0 auto;
+}
+
+.f_bottom .f_logo {
+    margin-right: 10px
+}
+
+.f_bottom .f_text {
+    color: #b0b0b0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f_bottom .f_text .f_site {
+    line-height: 1.125rem;
+    margin: 0;
+    font-size: .75rem;
+    color: #757575;
+}
+
+.f_bottom .f_text .f_site span {
+    margin: 0 .12rem;
+    font-family: sans-serif;
+    color: #b0b0b0;
+    font-size: .75rem;
+}
+
+.f_bottom .f_text .f_permission {
+    color: #b0b0b0;
+    font-size: .75rem;
+    align-self: start;
+}
+
+.f_bottom .f_text .f_permission a {
+    color: #b0b0b0;
+}
+
+.f_bottom .f_text .f_info_link {
+    margin: .25rem 0 0;
+    align-self: start;
 }
 
 .f_bottom .f_text .f_info_link a img {

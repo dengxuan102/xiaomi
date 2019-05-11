@@ -9,7 +9,8 @@ ul,
 ol,
 dl,
 pre,
-p {
+p,
+a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -77,4 +78,16 @@ a {
     color: #757575;
     text-decoration: none;
     cursor: pointer;
+}
+
+a:hover {
+    color: #ff6700;
+}
+
+.sep {
+    margin: 0 .25rem;
+}
+
+.flex {
+    display: flex;
 }
