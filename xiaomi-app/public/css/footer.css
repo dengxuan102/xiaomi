@@ -37,13 +37,11 @@
 
 .f_middle {
     padding: 2.5rem 0;
-    display: flex;
 }
 
 .f_middle .footer-links {
-    display: flex;
+    /* display: flex; */
     font-size: .75rem;
-    /* widows: 30rem; */
 }
 
 .f_middle .footer-links dt {
@@ -65,7 +63,6 @@
 }
 
 .f_middle .footer-contact {
-    display: flex;
     flex-direction: column;
     width: 15.8rem;
     height: 7rem;
@@ -109,7 +106,6 @@
 }
 
 .f_bottom {
-    display: flex;
     margin: 0 auto;
 }
 
@@ -160,10 +156,4 @@
     margin-left: 0;
     margin-bottom: .94rem;
     background: 0 0 0 0 url(../images/spirit.png) no-repeat;
-}
-
-
-
-.f_bottom .f_text .slogan {
-    
 }

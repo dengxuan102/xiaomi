@@ -83,3 +83,11 @@ a {
 a:hover {
     color: #ff6700;
 }
+
+.sep {
+    margin: 0 .25rem;
+}
+
+.flex {
+    display: flex;
+}
