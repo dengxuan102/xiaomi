@@ -76,4 +76,5 @@ ol {
 a {
     color: #757575;
     text-decoration: none;
+    cursor: pointer;
 }
