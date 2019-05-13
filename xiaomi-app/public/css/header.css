@@ -42,6 +42,7 @@
 .topbar-cart {
   width: 7.5rem;
   order: 3;
+  position: relative;
 }
 
 .topbar-cart a {
@@ -69,8 +70,8 @@
 
 .topbar-cart .cart-menu {
   display: none;
-  /* position: absolute; */
-  /* right: 21.5rem; */
+  position: absolute;
+  right: 0;
   top: 2.5rem;
   width: 20rem;
   height: 4rem;
@@ -95,10 +96,12 @@
 .site-header {
   z-index: 20;
   height: 6.25rem;
+  border-bottom: 0.062rem solid #e0e0e0;
 }
 
 .site-header .header-logo {
   width: 3.875rem;
+  height: 3.875rem;
   margin-top: 1.375rem;
 }
 
@@ -107,8 +110,8 @@
   width: 3.5rem;
   height: 3.5rem;
   overflow: hidden;
-  background-color: #ff6700;
   background: url(../images/index/site-header/mi-logo.png) no-repeat 50% 50%;
+  background-color: #ff6700;
   text-align: left;
   text-indent: -9999rem;
   overflow: hidden;
@@ -127,8 +130,8 @@
   left: 0;
   top: 0;
   z-index: 1;
-  width: 55px;
-  height: 55px;
+  width: 3.5rem;
+  height: 3.5rem;
   content: "";
   transform-origin: 50% 50%;
   transition: all 0.2s;
@@ -138,8 +141,142 @@
   background: url(../images/index/site-header/mi-home.png) no-repeat 50% 50%;
   opacity: 0;
   filter: alpha(opacity=0) \9;
-  margin-left: -55px;
+  margin-left: -3.5rem;
   transform: translate3d(0, 0, 0);
+}
+.header-nav {
+  vertical-align: middle;
+}
+
+.header-nav .nav-list:before {
+  content: "";
+  display: table;
+}
+
+.header-nav .nav-list:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-header .header-nav {
+  width: 53rem;
+  vertical-align: middle;
+}
+
+.site-header .nav-list {
+  z-index: 10;
+  width: 51.25rem;
+  height: 6.25rem;
+  vertical-align: middle;
+  padding: 1.5rem 0 0 2.8rem;
+  font-size: 1rem;
+}
+
+.site-header .nav-category {
+  position: relative;
+  width: 7rem;
+  height: 2.5rem;
+  padding: 1.15rem 0;
+}
+
+.site-header .nav-category .link-category {
+  display: block;
+  padding: 1.625rem 0 2.375rem;
+  text-align: right;
+  color: #333;
+}
+
+.site-category {
+  position: absolute;
+  display: none;
+  top: 4.75rem;
+  left: -6.6rem;
+  z-index: 21;
+  width: 14.625rem;
+  height: 28.75rem;
+  font-size: 0.875rem;
+}
+.nav-category:hover .site-category {
+  display: block;
+}
+
+.site-category-list {
+  height: 28.75rem;
+  padding: 1.25rem 0;
+  border: 0.06rem solid #ff6700;
+  color: #424242;
+  background: #fff;
+}
+
+.site-category-list .title {
+  position: relative;
+  display: block;
+  padding-left: 1.875rem;
+  height: 2.625rem;
+  line-height: 2.625rem;
+  color: #424242;
+}
+
+.site-category-list .title .iconfont {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.25rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #e0e0e0;
+}
+
+.site-category-list .title:hover {
+  background: #ff6700;
+  color: #fff;
+}
+
+.site-category-list .children {
+  display: none;
+  position: absolute;
+  left: 14.625rem;
+  top: 0;
+  z-index: 24;
+  height: 28.75rem;
+  border: 0.06rem solid #e0e0e0;
+  border-left: 0;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.18);
+}
+
+.site-category-list .children-list {
+  height: 28.625rem;
+  padding: 0.125rem;
+}
+.site-category-list .children-list li {
+  position: relative;
+  width: 16.56rem;
+  height: 4.75rem;
+}
+.site-category-list .children-list .thumb {
+  margin-right: 0.75rem;
+  vertical-align: middle;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.site-category-list .children-list .link {
+  display: block;
+  padding: 1.125rem 1.25rem;
+  line-height: 2.5rem;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.site-category-list .children-list .text {
+  line-height: 2.5rem;
+}
+.category-item:hover .children {
+  display: flex;
+}
+.site-category-list .children-list .link:hover {
+  color: #ff6700;
 }
 
 /* site-header  end */
