@@ -144,6 +144,7 @@
   margin-left: -3.5rem;
   transform: translate3d(0, 0, 0);
 }
+
 .header-nav {
   vertical-align: middle;
 }
@@ -159,6 +160,7 @@
   clear: both;
 }
 
+
 .site-header .header-nav {
   width: 53rem;
   vertical-align: middle;
@@ -166,18 +168,19 @@
 
 .site-header .nav-list {
   z-index: 10;
-  width: 51.25rem;
+  /* width: 51.25rem; */
   height: 6.25rem;
   vertical-align: middle;
   padding: 1.5rem 0 0 2.8rem;
   font-size: 1rem;
 }
 
-.site-header .nav-category {
+.site-header .nav-list .nav-category,
+.site-header .nav-list .nav-item {
   position: relative;
-  width: 7rem;
+  /* width: 7rem; */
   height: 2.5rem;
-  padding: 1.15rem 0;
+  padding: 1.15rem .625rem;
 }
 
 .site-header .nav-category .link-category {
@@ -197,6 +200,7 @@
   height: 28.75rem;
   font-size: 0.875rem;
 }
+
 .nav-category:hover .site-category {
   display: block;
 }
@@ -245,15 +249,16 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.18);
 }
 
-.site-category-list .children-list {
-  height: 28.625rem;
-  padding: 0.125rem;
+.site-category-list .children-list:first-child {
+  padding-left: 1.125rem;
 }
+
 .site-category-list .children-list li {
   position: relative;
-  width: 16.56rem;
+  width: 15.2rem;
   height: 4.75rem;
 }
+
 .site-category-list .children-list .thumb {
   margin-right: 0.75rem;
   vertical-align: middle;
@@ -263,20 +268,42 @@
 
 .site-category-list .children-list .link {
   display: block;
-  padding: 1.125rem 1.25rem;
+  padding: 1.125rem;
+  padding-left: 0;
   line-height: 2.5rem;
   color: #333;
   transition: color 0.2s;
 }
 
-.site-category-list .children-list .text {
-  line-height: 2.5rem;
+
+.site-category-list .children-list .text,
+.nav-list .nav-item .text {
+  line-height: 1.5rem;
 }
+
+.header-nav .nav-list .nav-item,
+.header-nav .nav-list .nav-category {
+  /* margin-left: .3rem; */
+}
+
+.header-nav .nav-list .nav-item {
+  text-align: center;
+  white-space: nowrap;
+
+}
+
 .category-item:hover .children {
   display: flex;
 }
+
 .site-category-list .children-list .link:hover {
   color: #ff6700;
+}
+
+/* 小米手机 */
+.nav-item .item-children .children-list {
+  padding-left: 2.5rem;
+  margin: 1rem 0;
 }
 
 /* site-header  end */
