@@ -160,7 +160,6 @@
   clear: both;
 }
 
-
 .site-header .header-nav {
   width: 53rem;
   vertical-align: middle;
@@ -175,12 +174,11 @@
   font-size: 1rem;
 }
 
-.site-header .nav-list .nav-category,
-.site-header .nav-list .nav-item {
+.site-header .nav-list .nav-category {
   position: relative;
   /* width: 7rem; */
   height: 2.5rem;
-  padding: 1.15rem .625rem;
+  padding: 1.15rem 0.625rem;
 }
 
 .site-header .nav-category .link-category {
@@ -275,21 +273,14 @@
   transition: color 0.2s;
 }
 
-
 .site-category-list .children-list .text,
 .nav-list .nav-item .text {
   line-height: 1.5rem;
 }
 
-.header-nav .nav-list .nav-item,
-.header-nav .nav-list .nav-category {
-  /* margin-left: .3rem; */
-}
-
 .header-nav .nav-list .nav-item {
   text-align: center;
   white-space: nowrap;
-
 }
 
 .category-item:hover .children {
@@ -302,16 +293,19 @@
 
 /* 小米手机 */
 
-
 .site-header .header-nav-menu-active {
   border-bottom: 1px solid #e0e0e0 \9;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
-  transition: box-shadow .2s;
+  transition: box-shadow 0.2s;
+}
+.site-header .nav-list .nav-item {
+  height: 2.5rem;
+  padding: 1.15rem 0.625rem;
 }
 
 .site-header .header-nav-menu {
   position: absolute;
-  top: 100px;
+  top: 140px;
   left: 0;
   z-index: 24;
   width: 100%;
@@ -319,15 +313,18 @@
   border-top: 1px solid #e0e0e0;
   background: #fff;
 }
-
-.header-nav-menu .container {
-  position: relative;
+.nav-item .header-nav-menu {
+  display: none;
 }
-
+.header-nav .nav-list .nav-item:hover .header-nav-menu-active {
+  display: block;
+}
 .nav-item .header-nav-menu .children-list {
-  padding-left: 2.5rem;
-  margin: 1rem 0;
-  font-size: .75rem;
+  padding-left: 0rem;
+  font-size: 0.75rem;
+}
+.nav-item .header-nav-menu .first {
+  padding-left: 0;
 }
 
 .site-header .header-nav-menu .children-list li {
@@ -335,14 +332,24 @@
   float: left;
   width: 180px;
   padding: 35px 12px 0;
-  text-align: center;
+}
+.header-nav-menu .children-list li:before {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 1px;
+  height: 100px;
+  content: "";
+  background-color: #e0e0e0;
+}
+.header-nav-menu .children-list .first-mi:before {
+  display: none;
 }
 
 .site-header .header-nav-menu .figure-thumb {
   width: 160px;
   height: 110px;
   margin: 0 auto 16px;
-  text-align: center;
 }
 
 .site-header .header-nav-menu .figure-thumb a {
@@ -386,4 +393,82 @@
   color: #ff6700;
 }
 
+/* 搜索框 */
+.site-header .search-form {
+  position: relative;
+  width: 296px;
+  height: 50px;
+}
+.site-header .search-text {
+  position: absolute;
+  top: 0;
+  right: 51px;
+  z-index: 1;
+  width: 223px;
+  height: 3rem;
+  padding: 0 10px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  line-height: 3rem;
+  outline: 0;
+  transition: all 0.2s;
+}
+.site-header .search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 52px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  font-size: 24px;
+  line-height: 24px;
+  background: #fff;
+  color: #616161;
+  outline: 0;
+  transition: all 0.2s;
+}
+.site-header .search-hot-words {
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 62px;
+  z-index: 2;
+  text-align: right;
+}
+
+.site-header .search-hot-words a {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 5px;
+  padding: 0 5px;
+  font-size: 12px;
+  background: #eee;
+  color: #757575;
+  transition: all 0.2s;
+}
+.site-header .search-form .keyword-list {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 20;
+  width: 243px;
+  border: 1px solid #ff6700;
+  border-top: 0;
+  background: #fff;
+}
+.site-header .search-form .keyword-list li a {
+  position: relative;
+  display: block;
+  padding: 6px 15px;
+  font-size: 12px;
+  color: #424242;
+}
+.site-header .search-form .keyword-list li a .result {
+  position: absolute;
+  right: 15px;
+  top: 6px;
+  color: #b0b0b0;
+}
 /* site-header  end */

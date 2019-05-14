@@ -13,3 +13,7 @@
     topbar_info.style.display = "none";
   };
 })();
+
+$(".site-header .search-text").focus(function() {
+  $(this).css("border", "1px solid #ff6700");
+});

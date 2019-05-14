@@ -260,6 +260,42 @@
             <div class="header-nav-menu header-nav-menu-active">
               <div class="container">
                 <ul class="children-list">
+                  <li class="first first-mi">
+                    <div class="figure figure-thumb"><a href="javascript:;"><img
+                          src="./images/index/header-nav/mi9-320.png" alt="小米9"></a></div>
+                    <div class="title"><a href="javascript:;">小米9</a></div>
+                    <p class="price">2999元</p>
+                    <div class="flags">
+                      <div class="flag">新品</div>
+                    </div>
+                  </li>
+                  <li class="first">
+                    <div class="figure figure-thumb"><a href="javascript:;"><img
+                          src="./images/index/header-nav/mi9-320.png" alt="小米9"></a></div>
+                    <div class="title"><a href="javascript:;">小米9</a></div>
+                    <p class="price">2999元</p>
+                    <div class="flags">
+                      <div class="flag">新品</div>
+                    </div>
+                  </li>
+                  <li class="first">
+                    <div class="figure figure-thumb"><a href="javascript:;"><img
+                          src="./images/index/header-nav/mi9-320.png" alt="小米9"></a></div>
+                    <div class="title"><a href="javascript:;">小米9</a></div>
+                    <p class="price">2999元</p>
+                  </li>
+                  <li class="first">
+                    <div class="figure figure-thumb"><a href="javascript:;"><img
+                          src="./images/index/header-nav/mi9-320.png" alt="小米9"></a></div>
+                    <div class="title"><a href="javascript:;">小米9</a></div>
+                    <p class="price">2999元</p>
+                  </li>
+                  <li class="first">
+                    <div class="figure figure-thumb"><a href="javascript:;"><img
+                          src="./images/index/header-nav/mi9-320.png" alt="小米9"></a></div>
+                    <div class="title"><a href="javascript:;">小米9</a></div>
+                    <p class="price">2999元</p>
+                  </li>
                   <li class="first">
                     <div class="figure figure-thumb"><a href="javascript:;"><img
                           src="./images/index/header-nav/mi9-320.png" alt="小米9"></a></div>
@@ -320,11 +356,42 @@
           </li>
         </ul>
       </div>
+      <div class="header-search clearfix">
+        <form action="javascript:;" class="search-form" method="GET">
+          <input type="search" class="search-text" id="search" name="keywords" autocomplete="off"
+            data-search-config="{'defaultWords':[{'Key':'小米6X','Rst':6},{'Key':'小米MIX 2S','Rst':5},{'Key':'黑鲨游戏手机','Rst':3},{'Key':'红米Note 5','Rst':6},{'Key':'红米5A','Rst':13},{'Key':'小米电视4C','Rst':5},{'Key':'电视32英寸','Rst':3},{'Key':'笔记本pro','Rst':5},{'Key':'空气净化器','Rst':11},{'Key':'净水器','Rst':8}]}">
+          <input type="submit" class="search-btn iconfont" value="&#xe750;">
+          <div class="search-hot-words">
+            <a href="javascript:;">小米9</a>
+            <a href="javascript:;">小米9 SE</a>
+          </div>
+          <div class="keyword-list">
+            <ul class="result-list">
+              <li data-key="小米6X"><a href="javascript:;">小米6X<span class="result">约有6件</span></a></li>
+              <li data-key="小米MIX&nbsp;2S"><a href="javascript:;">小米MIX&nbsp;2S<span class="result">约有5件</span></a></li>
+              <li data-key="黑鲨游戏手机"><a href="javascript:;">黑鲨游戏手机<span class="result">约有3件</span></a></li>
+              <li data-key="红米Note&nbsp;5"><a href="javascript:;">红米Note&nbsp;5<span class="result">约有6件</span></a></li>
+              <li data-key="红米5A"><a href="javascript:;">红米5A<span class="result">约有13件</span></a></li>
+              <li data-key="小米电视4C"><a href="javascript:;">小米电视4C<span class="result">约有5件</span></a></li>
+              <li data-key="电视32英寸"><a href="javascript:;">电视32英寸<span class="result">约有3件</span></a></li>
+              <li data-key="笔记本pro"><a href="javascript:;">笔记本pro<span class="result">约有5件</span></a></li>
+              <li data-key="空气净化器"><a href="javascript:;">空气净化器<span class="result">约有11件</span></a></li>
+              <li data-key="净水器"><a href="javascript:;">净水器<span class="result">约有3件</span></a></li>
+
+            </ul>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="header-search"></div>
+
   </div>
 
-
+  <script src="./js/jquery-1.11.3.js"></script>
+  <script>
+    $(".site-header .search-text").focus(function () {
+      $(this).css("border", "1px solid #ff6700");
+    });
+  </script>
 </body>
 
 </html>
