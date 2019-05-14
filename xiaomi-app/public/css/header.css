@@ -98,6 +98,9 @@
   height: 6.25rem;
   border-bottom: 0.062rem solid #e0e0e0;
 }
+.site-header .container {
+  justify-content: space-between;
+}
 
 .site-header .header-logo {
   width: 3.875rem;
@@ -394,6 +397,9 @@
 }
 
 /* 搜索框 */
+.site-header .header-search {
+  align-self: center;
+}
 .site-header .search-form {
   position: relative;
   width: 296px;
@@ -428,6 +434,11 @@
   outline: 0;
   transition: all 0.2s;
 }
+.site-header .search-btn:hover {
+  background: #ff6700;
+  color: #e0e0e0;
+  transition: all 0.2s;
+}
 .site-header .search-hot-words {
   display: block;
   position: absolute;
@@ -448,6 +459,11 @@
   color: #757575;
   transition: all 0.2s;
 }
+.site-header .search-hot-words a:hover {
+  background: #ff6700;
+  color: #e0e0e0;
+  transition: all 0.2s;
+}
 .site-header .search-form .keyword-list {
   position: absolute;
   left: 0;
@@ -457,6 +473,7 @@
   border: 1px solid #ff6700;
   border-top: 0;
   background: #fff;
+  transition: all 0.2s;
 }
 .site-header .search-form .keyword-list li a {
   position: relative;
@@ -464,6 +481,9 @@
   padding: 6px 15px;
   font-size: 12px;
   color: #424242;
+}
+.site-header .search-form .keyword-list li a:hover {
+  background-color: rgba(168, 163, 163, 0.137);
 }
 .site-header .search-form .keyword-list li a .result {
   position: absolute;

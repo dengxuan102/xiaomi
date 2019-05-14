@@ -100,3 +100,6 @@ input[type="submit"] {
     *overflow: visible;
     border-radius: 0;
 }
+.hide{
+  display: none;
+}

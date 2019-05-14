@@ -365,7 +365,7 @@
             <a href="javascript:;">小米9</a>
             <a href="javascript:;">小米9 SE</a>
           </div>
-          <div class="keyword-list">
+          <div class="keyword-list hide">
             <ul class="result-list">
               <li data-key="小米6X"><a href="javascript:;">小米6X<span class="result">约有6件</span></a></li>
               <li data-key="小米MIX&nbsp;2S"><a href="javascript:;">小米MIX&nbsp;2S<span class="result">约有5件</span></a></li>
@@ -389,7 +389,12 @@
   <script src="./js/jquery-1.11.3.js"></script>
   <script>
     $(".site-header .search-text").focus(function () {
-      $(this).css("border", "1px solid #ff6700");
+      $(this).css("border", "1px solid #ff6700").next().css("border", "1px solid #ff6700").next().addClass("hide");
+      $(".site-header .search-form .keyword-list").removeClass("hide");
+    });
+    $(".site-header .search-text").blur(function () {
+      $(this).css("border", "1px solid #e0e0e0").next().css("border", "1px solid #e0e0e0");
+      $(".site-header .search-form .keyword-list").addClass("hide");
     });
   </script>
 </body>
