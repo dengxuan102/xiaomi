@@ -1,0 +1,24 @@
+#navCategory {
+    width: 7rem;
+}
+
+#category {
+    display: none;
+}
+
+#site-category {
+    display: block;
+}
+
+#site-category .site-category-list {
+    background: rgba(0, 0, 0, 0.6);
+    border: 0;
+}
+
+.site-category-list .title:hover {
+    background: #ff6700;
+}
+
+.site-category .site-category-list .title {
+    color: #e0e0e0;
+}
