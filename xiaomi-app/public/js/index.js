@@ -4,7 +4,7 @@ $(() => {
   $.ajax({
     url: "header.html",
     type: "get",
-    success: function(res) {
+    success: function (res) {
       console.log(res);
       var my_header = document.getElementsByClassName("my_header");
       console.log(my_header);
@@ -12,20 +12,23 @@ $(() => {
     }
   });
 });
-$(document).ready(function() {
+$(document).ready(function () {
   var mySwiper = new Swiper(".swiper-container", {
     direction: "horizontal", // 垂直切换选项
     loop: true, // 循环模式选项
+    effect: 'fade',
 
     // 如果需要分页器
     pagination: {
-      el: ".swiper-pagination"
+      el: ".swiper-pagination",
+      clickable: "true"
     },
 
     // 如果需要前进后退按钮
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
+      prevEl: ".swiper-button-prev",
+    },
+    uniqueNavElements: false,
   });
 });
