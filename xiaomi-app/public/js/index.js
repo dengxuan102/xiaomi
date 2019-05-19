@@ -1,22 +1,14 @@
-$(() => {
-  //引入头部
-  $(`<link rel="stylesheet" href="./css/header.css">`).appendTo("head");
-  $.ajax({
-    url: "header.html",
-    type: "get",
-    success: function (res) {
-      console.log(res);
-      var my_header = document.getElementsByClassName("my_header");
-      console.log(my_header);
-      $("#header").append(res);
-    }
-  });
-});
-$(document).ready(function () {
+$(document).ready(function() {
   var mySwiper = new Swiper(".swiper-container", {
     direction: "horizontal", // 垂直切换选项
     loop: true, // 循环模式选项
-    effect: 'fade',
+    effect: "fade",
+    // autoplay: true,
+    autoplay: {
+      delay: 2000,
+      stopOnLastSlide: false,
+      disableOnInteraction: true //用户操作swiper之后是否禁止autoplay，包括触碰，拖动，点击pagination等操作true/false
+    },
 
     // 如果需要分页器
     pagination: {
@@ -27,8 +19,8 @@ $(document).ready(function () {
     // 如果需要前进后退按钮
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      prevEl: ".swiper-button-prev"
     },
-    uniqueNavElements: false,
+    uniqueNavElements: false
   });
 });
