@@ -113,7 +113,8 @@
   width: 3.5rem;
   height: 3.5rem;
   overflow: hidden;
-  background: url(../images/index/site-header/mi-home-logo.png) no-repeat 100% 100% ;
+  background: url(../images/index/site-header/mi-home-logo.png) no-repeat 100%
+    100%;
   background-color: #ff6700;
   text-align: left;
   text-indent: -9999rem;

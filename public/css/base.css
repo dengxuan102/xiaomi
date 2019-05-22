@@ -96,10 +96,10 @@ input[type="search"] {
   box-sizing: content-box;
 }
 input[type="submit"] {
-    cursor: pointer;
-    *overflow: visible;
-    border-radius: 0;
+  cursor: pointer;
+  *overflow: visible;
+  border-radius: 0;
 }
-.hide{
+.hide {
   display: none !important;
 }

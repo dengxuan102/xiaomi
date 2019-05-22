@@ -141,9 +141,152 @@
 }
 
 /* 主体部分开始 */
-.home-main{
+.home-main {
   padding-top: 22px;
   background: #f5f5f5;
 }
+.home-main .home-brick-box {
+  height: 686px;
+  margin-bottom: 8px;
+}
+.home-main .home-brick-box .box-hd {
+  height: 58px;
+  justify-content: space-between;
+}
+.home-main .home-brick-box .box-hd .title {
+  font-size: 22px;
+  font-weight: 20;
+  line-height: 58px;
+  color: #333;
+  display: block;
+}
 
+.home-main .box-hd .more .more-link .iconfont {
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+  margin-left: 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  line-height: 12px;
+  background: #b0b0b0;
+  color: #fff;
+  vertical-align: 1px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.home-main .box-hd .more .more-link {
+  line-height: 58px;
+  color: #424242;
+  transition: all 0.4s;
+}
+.home-main .box-bd .first img {
+  height: 614px;
+}
+.home-main .box-bd .span-first {
+  width: 234px;
+}
+.home-main .box-bd .first {
+  height: 614px;
+}
+.brick-itme-active {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -2px, 0);
+}
+.home-main .box-bd .span-last {
+  width: 992px;
+}
+.home-main .box-bd .brick-list {
+  flex-wrap: wrap;
+}
+.home-main .box-bd .first a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.brick-item {
+  position: relative;
+  z-index: 1;
+  width: 234px;
+  height: 260px;
+  padding: 20px 0;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+.box-bd .brick-item .figure {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 18px;
+}
+.box-bd .brick-item .figure a {
+  display: block;
+}
+.box-bd .brick-item .figure img {
+  width: 160px;
+  height: 160px;
+}
+
+.home-main .box-bd .brick-item .title {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 10px 2px;
+}
+.home-main .box-bd .brick-item .title a {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #333;
+}
+.box-bd .brick-item .desc {
+  margin: 0 10px 10px;
+  height: 18px;
+  font-size: 12px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #b0b0b0;
+}
+.box-bd .brick-item .price {
+  margin: 0 10px 14px;
+  text-align: center;
+  color: #ff6700;
+}
+.box-bd .brick-item .price del {
+  color: #b0b0b0;
+}
+.box-bd .brick-item .flag {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  width: 64px;
+  height: 20px;
+  margin-left: -32px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+.flag-saleoff {
+  background-color: #e53935;
+}
+.flag-new {
+  background-color: #83c44e;
+  z-index: 5;
+}
+
+.home-banner-box {
+  margin: 28px 0 22px;
+  height: 120px;
+  overflow: hidden;
+}
+.home-banner-box a img{
+  width: 100%;
+}
 /* 主体部分结束 */
