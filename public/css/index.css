@@ -86,8 +86,6 @@
 }
 
 .home-channel-list li {
-  position: relative;
-  /* float: left; */
   width: 70px;
   height: 82px;
   padding: 0 3px;
@@ -115,7 +113,8 @@
   line-height: 24px;
 }
 
-.home-channel-list li:before, .home-channel-list li:after {
+.home-channel-list li:before,
+.home-channel-list li:after {
   position: absolute;
   content: "";
   background: #665e57;
@@ -226,10 +225,6 @@
   width: 992px;
 }
 
-.home-main .box-bd .brick-list {
-  flex-wrap: wrap;
-}
-
 .home-main .box-bd .first a {
   display: block;
   width: 100%;
@@ -237,7 +232,6 @@
 }
 
 .brick-item {
-  position: relative;
   z-index: 1;
   width: 234px;
   height: 260px;
@@ -333,17 +327,46 @@
 }
 
 /* 家电 */
-
-.home-brick-box .box-bd .span-first .first-item img {
+.home-brick-box .box-hd {
+  align-items: center;
+}
+.home-main .home-brick-box .box-bd .brick-list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home-brick-box .tab-list li {
+  margin-left: 30px;
+  font-size: 16px;
+  color: #424242;
+}
+.home-brick-box .box-bd .span-first .first-item {
+  flex-direction: column;
+}
+#homeelec .box-bd .span-first .first-item img {
   height: 300px;
 }
 
-.home-brick-box .box-bd .span-first .first-item li {
+.home-brick-box .box-bd .brick-item {
   width: 234px;
-  padding: 0;
-  margin: 0 0 14px;
+  height: 260px;
   background: #fff;
   transition: all 0.2s linear;
+}
+
+#homeelec .box-bd .brick-item {
+  height: 300px;
+  padding: 0;
+}
+#homeelec .box-bd .span-last .brick-item {
+  height: 300px;
+}
+#homeelec .span-last .brick-item .figure-img{
+  padding-top: 34px;
+  margin: 0 auto 18px;
+}
+.home-brick-box .span-last .brick-item .figure-img img {
+  width: 150px;
+  height: 150px;
 }
 
 /* 家电结束 */
