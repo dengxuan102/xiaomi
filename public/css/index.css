@@ -241,6 +241,9 @@
   background: #fff;
   transition: all 0.2s linear;
 }
+.brick-item:hover {
+  z-index: 2;
+}
 
 .box-bd .brick-item .figure {
   width: 160px;
@@ -347,6 +350,7 @@
 }
 
 .home-brick-box .box-bd .brick-item {
+  position: relative;
   width: 234px;
   height: 260px;
   background: #fff;
@@ -360,15 +364,100 @@
 #homeelec .box-bd .span-last .brick-item {
   height: 300px;
 }
-#homeelec .span-last .brick-item .figure-img{
+#homeelec .span-last .brick-item .figure-img {
   padding-top: 34px;
-  margin: 0 auto 18px;
+  margin: 0 auto 8px;
 }
 .home-brick-box .span-last .brick-item .figure-img img {
   width: 150px;
   height: 150px;
 }
+.brick-item .review-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 234px;
+  height: 0;
+  overflow: hidden;
+  font-size: 12px;
+  background: #ff6700;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.brick-item .review-wrapper a {
+  display: block;
+  padding: 8px 30px;
+  outline: 0;
+}
+.brick-item .review {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.brick-item .author {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.brick-item-active .review-wrapper {
+  height: 76px;
+  opacity: 1;
+}
+#homeelec .box-bd .span-last .brick-item-s {
+  height: 93px;
+  padding-top: 50px;
+}
+#homeelec .brick-item-s .figure-img {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  width: 80px;
+  height: 80px;
+}
+#homeelec .brick-item-s .figure-img img {
+  width: 80px;
+  height: 80px;
+}
+#homeelec .brick-item-s .price {
+  margin: 0 110px 0 -15px;
+  font-size: 12px;
+  color: #ff6700;
+}
+#homeelec .brick-item-s .title {
+  margin: -10px 110px 5px 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#homeelec .brick-item-s .more {
+  display: block;
+  margin: 0 110px 0 30px;
+  font-size: 18px;
+}
+#homeelec .brick-item-s .figure-more {
+  position: absolute;
+  right: 70px;
+  top: 48px;
+  width: 50px;
+  height: 50px;
+}
+.brick-item-s .figure-more a {
+  display: block;
+  color: #ff6700;
+}
+#homeelec .brick-list .brick-item-s i {
+  font-size: 50px;
+  line-height: 50px;
+}
 
+#homeelec .brick-list .brick-item-s .more .small {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+  font-size: 12px;
+}
 /* 家电结束 */
 
 /* 主体部分结束 */

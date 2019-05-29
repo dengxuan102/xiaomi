@@ -1,5 +1,5 @@
 $(() => {
-  $(document).ready(function () {
+  $(document).ready(function() {
     var mySwiper = new Swiper(".swiper-container", {
       direction: "horizontal", // 垂直切换选项
       loop: true, // 循环模式选项
@@ -26,11 +26,10 @@ $(() => {
     });
   });
 
-
-  $(".home-main .home-brick-box .box-bd div li").mouseenter(function () {
-    $(this).addClass('brick-item-active');
+  $(".home-main .home-brick-box .box-bd ul .brick-item").mouseenter(function() {
+    $(this).addClass("brick-item-active");
   });
-  $(".home-main .home-brick-box .box-bd div li").mouseleave(function () {
-    $(this).removeClass('brick-item-active');
-  })
+  $(".home-main .home-brick-box .box-bd ul .brick-item").mouseleave(function() {
+    $(this).removeClass("brick-item-active");
+  });
 });
